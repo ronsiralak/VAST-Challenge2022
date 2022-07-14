@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0525.0851                               -->
+<workbook original-version='18.1' source-build='2022.1.2 (20221.22.0525.0851)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ManyJob' inline='true' name='federated.0cq9jwa1qrdgka1elkryq1rnjief' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ManyJob' name='textscan.0sishl110duxki1efgalf0ykjcw2'>
+            <connection class='textscan' directory='C:/Users/Admin/Desktop/VAST-Challenge-2022' filename='ManyJob.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='BigJob' name='textscan.1heuon41v8zkvb1enq3240uja9id'>
+            <connection class='textscan' directory='C:/Users/Admin/Desktop/VAST-Challenge-2022' filename='BigJob.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1heuon41v8zkvb1enq3240uja9id' name='BigJob.csv' table='[BigJob#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='th_TH' separator=','>
+            <column datatype='datetime' name='timestamp' ordinal='0' />
+            <column datatype='integer' name='participantId' ordinal='1' />
+            <column datatype='integer' name='jobId' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1heuon41v8zkvb1enq3240uja9id' name='BigJob.csv' table='[BigJob#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='th_TH' separator=','>
+            <column datatype='datetime' name='timestamp' ordinal='0' />
+            <column datatype='integer' name='participantId' ordinal='1' />
+            <column datatype='integer' name='jobId' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[BigJob.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;฿&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;th_TH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[BigJob.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BigJob.csv_9121CCD9846140A6889E4524F766207C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participantId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[participantId]</local-name>
+            <parent-name>[BigJob.csv]</parent-name>
+            <remote-alias>participantId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BigJob.csv_9121CCD9846140A6889E4524F766207C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jobId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jobId]</local-name>
+            <parent-name>[BigJob.csv]</parent-name>
+            <remote-alias>jobId</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BigJob.csv_9121CCD9846140A6889E4524F766207C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='BigJob.csv' datatype='table' name='[__tableau_internal_object_id__].[BigJob.csv_9121CCD9846140A6889E4524F766207C]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[jobId]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[participantId]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Thailand&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='BigJob.csv' id='BigJob.csv_9121CCD9846140A6889E4524F766207C'>
+            <properties context=''>
+              <relation connection='textscan.1heuon41v8zkvb1enq3240uja9id' name='BigJob.csv' table='[BigJob#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='th_TH' separator=','>
+                  <column datatype='datetime' name='timestamp' ordinal='0' />
+                  <column datatype='integer' name='participantId' ordinal='1' />
+                  <column datatype='integer' name='jobId' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ManyJob' name='federated.0cq9jwa1qrdgka1elkryq1rnjief' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cq9jwa1qrdgka1elkryq1rnjief'>
+            <_.fcp.ObjectModelTableType.true...column caption='BigJob.csv' datatype='table' name='[__tableau_internal_object_id__].[BigJob.csv_9121CCD9846140A6889E4524F766207C]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[BigJob.csv_9121CCD9846140A6889E4524F766207C]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:BigJob.csv_9121CCD9846140A6889E4524F766207C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[timestamp]' derivation='Day' name='[dy:timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Hour' name='[hr:timestamp:ok]' pivot='key' type='ordinal' />
+            <column datatype='integer' name='[jobId]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Month' name='[mn:timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[jobId]' derivation='None' name='[none:jobId:ok]' pivot='key' type='ordinal' />
+            <column datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='BigJob.csv' datatype='integer' name='[__tableau_internal_object_id__].[BigJob.csv_9121CCD9846140A6889E4524F766207C]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0cq9jwa1qrdgka1elkryq1rnjief].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0cq9jwa1qrdgka1elkryq1rnjief].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0cq9jwa1qrdgka1elkryq1rnjief].[hr:timestamp:ok]' value='24' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0cq9jwa1qrdgka1elkryq1rnjief].[none:jobId:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2413811683654785' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0cq9jwa1qrdgka1elkryq1rnjief].[none:jobId:ok] * [federated.0cq9jwa1qrdgka1elkryq1rnjief].[Multiple Values])</rows>
+        <cols>([federated.0cq9jwa1qrdgka1elkryq1rnjief].[mn:timestamp:ok] / ([federated.0cq9jwa1qrdgka1elkryq1rnjief].[dy:timestamp:ok] / [federated.0cq9jwa1qrdgka1elkryq1rnjief].[hr:timestamp:ok]))</cols>
+      </table>
+      <simple-id uuid='{6E3B86C2-35FD-45DF-B8B6-0A2C84EA1C2C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cq9jwa1qrdgka1elkryq1rnjief].[:Measure Names]</field>
+            <field>[federated.0cq9jwa1qrdgka1elkryq1rnjief].[dy:timestamp:ok]</field>
+            <field>[federated.0cq9jwa1qrdgka1elkryq1rnjief].[hr:timestamp:ok]</field>
+            <field>[federated.0cq9jwa1qrdgka1elkryq1rnjief].[mi:timestamp:ok]</field>
+            <field>[federated.0cq9jwa1qrdgka1elkryq1rnjief].[mn:timestamp:ok]</field>
+            <field>[federated.0cq9jwa1qrdgka1elkryq1rnjief].[none:jobId:ok]</field>
+            <field>[federated.0cq9jwa1qrdgka1elkryq1rnjief].[yr:timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{580ACAE8-62F9-4C7D-ACCD-F45D8E5C76EC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
